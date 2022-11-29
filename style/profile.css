@@ -1,0 +1,225 @@
+/* start header */
+.header .container .nav ul .special {
+    background-color: var(--main-color)!important;
+}
+.header .container .nav ul .special a {
+    color: white!important;
+}
+/* end header */
+/* start profile */
+.about {
+    padding: 20px;
+    border-bottom: 1px solid var(--second-color);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    gap: 20px;
+}
+.about img {
+    max-width: 100%;
+    border-radius: 30px;
+    height: auto;
+    padding-right: 20px;
+}
+.about .text span {
+    padding: 10px 15px;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 30px;
+    display: block;
+    width: fit-content;
+}
+.about .text h3 {
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+.about .text p {
+    line-height: 1.6;
+    color: #546166;
+}
+.about .text a {
+    display: block;
+    width: fit-content;
+    margin-top: 30px;
+    color: var(--main-color);
+    padding: 15px 20px;
+    border: 1px solid var(--main-color);
+    border-radius: 30px;
+}
+.about .box {
+    background-color: var(--second-color);
+    padding: 20px;
+    border-radius: 30px;
+    height: fit-content;
+}
+.about .box .row {
+    display: flex;
+    justify-content:  space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.about .box .row:not(:last-child) {
+    border-bottom: 1px solid #666666;
+}
+.about .box .row p {
+    color: #546166
+}
+.about .box .row span {
+    color: var(--main-color)
+}
+.most-popular-clips {
+    padding: 20px;
+}
+.most-popular-clips .main-hedding {
+    margin-bottom: 20px;
+}
+.most-popular-clips .main-hedding h1{
+    color: var(--main-color);
+    margin: 0;
+    font-weight: 800;
+}
+.most-popular-clips .main-hedding h1 span {
+    color: white;
+    text-decoration: underline;
+}
+.most-popular-clips .boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+.most-popular-clips .boxes .box {
+    background-color: var(--second-color);
+    padding: 20px 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+.most-popular-clips .boxes .box .image {
+    position: relative;
+}
+.most-popular-clips .boxes .box .image img {
+    border-radius: 30px;
+}
+.most-popular-clips .boxes .box .image i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 15px 17px;
+    color: var(--main-color);
+    background-color: white;
+    border-radius: 50%;
+}
+.most-popular-clips .boxes .box .info  {
+    padding-top: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.most-popular-clips .boxes .box .info span i {
+    color: var(--main-color)
+}
+.most-popular-clips .end {
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.most-popular-clips .end a {
+    color: white;
+    background-color: var(--main-color);
+    border-radius: 30px;
+    padding: 10px 20px;
+    transition: .3s;
+}
+.most-popular-clips .end a:hover {
+    color: var(--main-color);
+    background-color: white;
+}
+/* end profile */
+/* start gaming library */
+.gaming-library {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.gaming-library .content {
+    padding: 20px;
+}
+.gaming-library .content .main-hedding {
+    padding-bottom: 30px;
+}
+.gaming-library .content .main-hedding h1 {
+    color: var(--main-color);
+    margin: 0;
+    font-weight: 800;
+}
+.gaming-library .content .main-hedding h1 span {
+    color: white;
+    text-decoration: underline;
+}
+
+.gaming-library .content .rows .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.gaming-library .content .rows .row:not(:last-child) {
+    border-bottom: 1px solid var(--second-color);
+}
+@media (max-width: 992px) {
+    .gaming-library .content .rows .row {
+        flex-direction: column;
+    }
+}
+.gaming-library .content .rows .row img {
+    height: 90px;
+    border-radius: 20px;
+}
+.gaming-library .content .rows .row .info {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+@media (max-width: 992px) {
+    .gaming-library .content .rows .row .info {
+        padding: 20px 10px;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .gaming-library .content .rows .row .info div {
+        flex: 50%;
+        text-align: center;
+        padding-top: 20px;
+    }
+}
+@media (max-width: 767px) {
+    .gaming-library .content .rows .row .info div {
+        flex: 100%;
+    }
+    .gaming-library .content .rows .row .info {
+        width: auto;
+    }
+}
+.gaming-library .content .rows .row .info p {
+    color: white;
+    padding-bottom: 10px;
+    font-weight: 800;
+}
+.gaming-library .content .rows .row .info span {
+    color: #606060;
+    font-size: 15px;
+}
+.gaming-library .content .rows .row a {
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 10px 20px;
+    border: 1px solid #606060;
+    border-radius: 30px;
+    color: #606060;
+}
+/* end gaming library */
